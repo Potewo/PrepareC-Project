@@ -8,7 +8,7 @@ fi
 mkdir $1
 cd $1
 touch main.cpp
-echo "#include <iostream>" >> main.cpp
+echo "#include <bits/stdc++.h>" >> main.cpp
 echo "using namespace std;" >> main.cpp
 echo "" >> main.cpp
 echo "int main() {" >> main.cpp 
@@ -18,5 +18,6 @@ echo "}" >> main.cpp
 touch Makefile
 echo "main: main.cpp" >> Makefile
 echo "	@g++ main.cpp" >> Makefile
+echo "	@echo finished compiling" >> Makefile
 echo "	@./a.out" >> Makefile
 
